@@ -1,10 +1,11 @@
 import React from "react";
 import MyBreadcrumbs from './Breadcrumbs';
-import Typography from '@material-ui/core/Typography';
-import { Button, FormControlLabel, Grid, InputAdornment, TextField } from "@material-ui/core";
-import SearchIcon from '@material-ui/icons/Search';
-import { Label } from "@material-ui/icons";
 import MyDocumentsTable from "./MyDocumentsTable";
+import SearchIcon from '@material-ui/icons/Search';
+import Typography from '@material-ui/core/Typography';
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+
+import { Button, Grid, InputAdornment, TextField } from "@material-ui/core";
 
 const MyDocuments = () => {
   return (
@@ -12,43 +13,31 @@ const MyDocuments = () => {
       <br />
       <MyBreadcrumbs />
       <br />
-      <Typography variant="h2" component="h2" gutterBottom>
+      <Typography variant="h2" gutterBottom>
         My documents
       </Typography>
+
       <Grid container spacing={3}>
-        <Grid item xs={3} style={{ paddingBottom: "8px", fontWeight: "bold" }}>
-          Search document
+        <Grid item xs={12} sm={3}>
+          <TextField label="Search document" variant="outlined" InputProps={{ startAdornment: (<InputAdornment><SearchIcon /></InputAdornment>) }} />
         </Grid>
-        <Grid item xs={3} style={{ paddingBottom: "8px", fontWeight: "bold" }}>
-          Date upload
+        <Grid item xs={12} sm={3}>
+          <TextField label="Date Uploaded (from)" type="date" variant="outlined" InputProps={{ startAdornment: (<InputAdornment><CalendarTodayIcon /></InputAdornment>) }} style={{ height: "100%", width: "100%" }} />
         </Grid>
-        <Grid item xs={3} style={{ paddingBottom: "8px", fontWeight: "bold" }}>
-          &nbsp;
+        <Grid item xs={12} sm={3}>
+          <TextField label="Date Uploaded (to)" type="date" variant="outlined" InputProps={{ startAdornment: (<InputAdornment><CalendarTodayIcon /></InputAdornment>) }} style={{ height: "100%", width: "100%" }} />
         </Grid>
-        <Grid item xs={3} style={{ paddingBottom: "8px", fontWeight: "bold" }}>
-          &nbsp;
-        </Grid>
-        <Grid item xs={3} style={{ paddingTop: 0 }}>
-          <TextField
-            variant="outlined"
-            InputProps={{ startAdornment: (<InputAdornment><SearchIcon /></InputAdornment>) }}
-          />
-        </Grid>
-        <Grid item xs={3} style={{ paddingTop: 0 }}>
-          <TextField variant="outlined" type="date" />
-        </Grid>
-        <Grid item xs={3} style={{ paddingTop: 0 }}>
-          <TextField variant="outlined" type="date" />
-        </Grid>
-        <Grid item xs={3} style={{ paddingTop: 0 }}>
-          <Button variant="contained" color="primary" style={{ height: "100%" }}>
+        <Grid item xs={12} sm={3}>
+          <Button variant="contained" color="primary" style={{ height: "100%", width: "100%" }}>
             <SearchIcon /> Search
           </Button>
         </Grid>
       </Grid>
+
       <br />
+
       <Grid container>
-        <Grid item xs={12}>
+        <Grid item xs={12} sm={12}>
           <MyDocumentsTable />
         </Grid>
       </Grid>

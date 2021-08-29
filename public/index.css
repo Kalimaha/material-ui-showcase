@@ -1,0 +1,38 @@
+body {
+  background-color: #F7F8FC !important;
+}
+
+.MuiContainer-root {
+  padding: 0 !important;
+}
+
+.main-container {
+  background-color: #F7F8FC;
+}
+
+.main-panel {
+  padding: 32px;
+  padding-top: 16px !important;
+}
+
+.MuiContainer-maxWidthSm {
+  max-width: 100% !important;
+}
+
+.sidebar {
+  background-color: #0C2947;
+}
+
+.documents-table {
+  background-color: #FFF;
+}
+
+.logo {
+  color: #FFF;
+  text-align: center;
+  padding: 8px;
+  font-weight: bold;
+  font-size: large;
+  height: "128px" !important;
+  min-height: "128px" !important;
+}
