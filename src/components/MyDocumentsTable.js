@@ -80,7 +80,7 @@ const MyDocumentsTable = () => {
             <TableBody>
               <TableRow>
                 <TableCell><Link href="/" style={{ cursor: "pointer" }}>TestResultsMay21</Link></TableCell>
-                <TableCell>Blood test results from 31 May 2021:<br />Haematology and erum chemistry</TableCell>
+                <TableCell>Blood test results from 31 May 2021:<br />Haematology and Serum chemistry</TableCell>
                 <TableCell>PDF</TableCell>
                 <TableCell>01 Jun 2021</TableCell>
                 <TableCell>
@@ -91,7 +91,7 @@ const MyDocumentsTable = () => {
 
               <TableRow>
                 <TableCell><Link href="/" style={{ cursor: "pointer" }}>ReferralLetterApr21</Link></TableCell>
-                <TableCell>Referral letter for Dr Smit<br />(Neurologist)</TableCell>
+                <TableCell>Referral letter for Dr Smith<br />(Neurologist)</TableCell>
                 <TableCell>PDF</TableCell>
                 <TableCell>28 May 2021</TableCell>
                 <TableCell>
