@@ -24,7 +24,7 @@ const selectedButtonStyle = {
 const Sidebar = () => {
   return (
     <div style={{ color: "#FFF" }}>
-      <div className="logo">InforMS</div>
+      <div className="logo">Showcase</div>
       <hr />
       <ButtonGroup orientation="vertical" variant="outlined" color="primary" style={{ width: "100%" }}>
         <Button style={buttonStyle} size="large">
